@@ -37,9 +37,9 @@ arg_pass.add_argument(
 )
 arg_pass.add_argument(
   "--l",
-  nargs='*', help='lambda; default [0.1, 0.5, 0.9] ',
+  nargs='*', help='lambda; default [0.95 , 0.97, 0.99] ',
   type=float,  
-  default=[0.1 , 0.5, 0.9],
+  default=[0.95 , 0.97, 0.99],
 )
 arg_pass.add_argument(
   "--d",
@@ -63,12 +63,9 @@ save_results= args.save_dir
 
 Alpha=[0.1] 
 main_reward=1    #R^T 
-assistant_reward=1  #R^A
+assistant_reward=0.1  #R^A
 adaptive_beta= True
-initial_values= np.append(0,np.append(np.random.randn(NumberOfTotalStates-2),0))  # samples from the standard normal distribution (same for all runs)
-# def initial_values(NumberOfTotalStates): # samples from the standard normal distribution (different for each run)
-#     iv= np.append(0,np.append(np.random.randn(NumberOfTotalStates-2),0))  # samples from the standard normal distribution
-#     return iv
+initial_values= np.zeros((NumberOfTotalStates))
 
 print ('debug_level:', debug_level, 
       '\nNumberOfTotalStates:', NumberOfTotalStates, '\nN_episodes:', N_episodes, '\nN_run:', N_run, 
@@ -119,7 +116,7 @@ class RandomWalk:
 
     def get_reward(self, old_position,new_position):
         if new_position > old_position:
-            return (self.Beta*self.AR)+((1-self.Beta)*self.MR) if self.nodes[new_position] == "Right" else self.Beta*self.AR
+            return self.MR if self.nodes[new_position] == "Right" else self.Beta*self.AR
         else:
             return 0
 
@@ -145,8 +142,7 @@ for c in range(len(cut)):
     for i in range(len(initial_beta)):
         for a in range(len(Alpha)):
             for n in range(N_run):
-                #value_estimates = initial_values(NumberOfTotalStates) #different random values in each run
-                value_estimates = np.copy(initial_values) #same random values in all runs
+                value_estimates = np.copy(initial_values)
                 betas = []
                 for episode in range(N_episodes):
                     if adaptive_beta:
