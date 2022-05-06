@@ -1,7 +1,7 @@
 # TA-Explore
 Implementation of **TA-Explore**, as presented in TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning.
 
-* Submitted to the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD2022)
+* Submitted to the Thirty-sixth Conference on Neural Information Processing Systems (NeurIPS 2022)
 
 # Importing
 
@@ -161,8 +161,7 @@ python A_Coupled_Four_Tank_MIMO_System.py --e 30000 --b 0 --E 3000 --w 1 --d Fal
 ```
 
 # Citation
-* Submitted to the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining
-* Washington DC Convention Center August 14-18, 2022
+* Submitted to the Thirty-sixth Conference on Neural Information Processing Systems
 
 Please cite the accompanied paper, if you find this useful:
 ```
