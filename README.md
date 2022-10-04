@@ -1,7 +1,8 @@
 # TA-Explore
 Implementation of **TA-Explore**, as presented in TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning.
 
-* Submitted to the Thirty-sixth Conference on Neural Information Processing Systems (NeurIPS 2022)
+* Submitted to The 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023)
+
 
 # Importing
 
@@ -161,7 +162,7 @@ python A_Coupled_Four_Tank_MIMO_System.py --e 30000 --b 0 --E 3000 --w 1 --d Fal
 ```
 
 # Citation
-* Submitted to the Thirty-sixth Conference on Neural Information Processing Systems
+* Submitted to The 22nd International Conference on Autonomous Agents and Multiagent Systems
 
 Please cite the accompanied paper, if you find this useful:
 ```
