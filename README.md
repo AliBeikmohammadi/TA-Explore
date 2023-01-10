@@ -1,6 +1,7 @@
 # TA-Explore
 Implementation of **TA-Explore**, as presented in TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning.
 
+<!-- a normal html comment -->
 < In Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), London, United Kingdom, May 29 – June 2, 2023. >
 * submitted to the International Joint Conference on Neural Networks 2023 (IJCNN 2023), Queensland, Australia, June 18 - June 23, 2023.
 
