@@ -1,7 +1,10 @@
 # TA-Explore
 Implementation of **TA-Explore**, as presented in TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning.
 
+* In Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), London, United Kingdom, May 29 – June 2, 2023.
 * submitted to the International Joint Conference on Neural Networks 2023 (IJCNN 2023), Queensland, Australia, June 18 - June 23, 2023.
+
+
 
 
 
@@ -163,6 +166,7 @@ python A_Coupled_Four_Tank_MIMO_System.py --e 30000 --b 0 --E 3000 --w 1 --d Fal
 ```
 
 # Citation
+* In Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), London, United Kingdom, May 29 – June 2, 2023.
 * submitted to the International Joint Conference on Neural Networks 2023 (IJCNN 2023), Queensland, Australia, June 18 - June 23, 2023.
 
 
