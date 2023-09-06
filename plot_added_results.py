@@ -238,7 +238,7 @@ def TC_plot(TA_dir, ppo_dir, a2c_dir, ddpg_dir, sac_dir, td3_dir , save_fig_dir,
         plt.xlabel('Episodes')
     else:
         plt.legend().set_visible(False)
-        ax.axes.get_xaxis().set_visible(False)
+        plt.xlabel('')
         
     plt.xlim((x_min, x_max)) 
     plt.rcParams.update(parameters)
