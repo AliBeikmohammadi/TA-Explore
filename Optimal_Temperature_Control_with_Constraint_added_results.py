@@ -221,7 +221,7 @@ def main(SEED= 0, algo='DDPG', A0=1, Save_results='./Results/Temperature_Control
     else:
          raise NotImplementedError
     model.set_logger(new_logger)
-    model.learn(total_timesteps=total_timesteps, tb_log_name=fname)
+    model.learn(total_timesteps=total_timesteps, tb_log_name=fname, log_interval=1)
     model.save(Save_results+'Weights/'+fname)
 
 

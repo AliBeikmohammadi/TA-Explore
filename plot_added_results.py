@@ -274,22 +274,15 @@ def FT_plot(TA_dir, ppo_dir, a2c_dir, ddpg_dir, sac_dir, td3_dir , save_fig_dir,
     dfddpg = pd.read_csv(ddpg_dir)
     dfsac = pd.read_csv(sac_dir)
     dftd3 = pd.read_csv(td3_dir)
-
-    dfa2c['time/total_timesteps'] = dfa2c['time/total_timesteps']/100
-    dfddpg['time/total_timesteps'] = dfddpg['time/total_timesteps']/100
-    dfsac['time/total_timesteps'] = dfsac['time/total_timesteps']/100
-    dftd3['time/total_timesteps'] = dftd3['time/total_timesteps']/100
-
     plt.figure(figsize=[10, 10], dpi=72)
     ax = plt.gca()
     parameters = {'axes.labelsize': 28, 'axes.titlesize': 28, 'legend.fontsize': 25}
     dfta.plot(x="episode", y="average R^T",ax=ax, label='TA-Explore',linewidth=3, c='k')
     dfppo.plot(x="episode", y="average R^T",ax=ax,label='PPO', linewidth=3, c='b')
-    dfa2c.plot(x="time/total_timesteps", y="rollout/ep_rew_mean",ax=ax,label='A2C', linewidth=11, style='g')
-    dfddpg.plot(x="time/total_timesteps", y="rollout/ep_rew_mean",ax=ax,label='DDPG', linewidth=9, style='r', alpha=0.7)
-    dfsac.plot(x="time/total_timesteps", y="rollout/ep_rew_mean",ax=ax,label='SAC', linewidth=3, c='m') #c
-    dftd3.plot(x="time/total_timesteps", y="rollout/ep_rew_mean",ax=ax,label='TD3', linewidth=3, c='y', alpha=0.5)
-    #plt.title(r'Coupled Four Tank MIMO System (${}\Vert a\Vert ^2$)'.format(omega))
+    dfa2c.plot(x="time/iterations", y="rollout/ep_rew_mean",ax=ax,label='A2C', linewidth=3, style='g')
+    dfddpg.plot(x="time/episodes", y="rollout/ep_rew_mean",ax=ax,label='DDPG', linewidth=6, style='r', alpha=0.7)
+    dfsac.plot(x="time/episodes", y="rollout/ep_rew_mean",ax=ax,label='SAC', linewidth=3, c='m') #c
+    dftd3.plot(x="time/episodes", y="rollout/ep_rew_mean",ax=ax,label='TD3', linewidth=3, c='y', alpha=1)
     plt.ylabel('Average Reward $R^T$')
     plt.xlabel('Episodes')
     plt.xlim((x_min, x_max)) 
