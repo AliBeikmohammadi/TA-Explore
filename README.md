@@ -1,6 +1,6 @@
 # TA-Explore
 Implementation of **TA-Explore**, as presented in:
-* TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning. In Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), London, United Kingdom, May 29 – June 2, 2023.
+* [TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning.](https://dl.acm.org/doi/10.5555/3545946.3598951) In Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), London, United Kingdom, May 29 – June 2, 2023.
 * Human-Inspired Framework to Accelerate Reinforcement Learning. Submitted to the 22nd European Control Conference (ECC), Stockholm, Sweden, June 25 - 28, 2024.
 
 
@@ -250,16 +250,21 @@ python A_Coupled_Four_Tank_MIMO_System.py --e 30000 --b 0 --E 3000 --w 1 --d Fal
 ```
 
 # Citation
-* In Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), London, United Kingdom, May 29 – June 2, 2023.
-* Submitted to the 22nd European Control Conference (ECC), Stockholm, Sweden, June 25 - 28, 2024.
+* [TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning.](https://dl.acm.org/doi/10.5555/3545946.3598951) In Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), London, United Kingdom, May 29 – June 2, 2023.
+* Human-Inspired Framework to Accelerate Reinforcement Learning. Submitted to the 22nd European Control Conference (ECC), Stockholm, Sweden, June 25 - 28, 2024.
   
 Please cite the accompanied paper, if you find this useful:
 ```
 @inproceedings{beikmohammadi2023ta,
-  title={TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning},
-  author={Beikmohammadi, Ali and Magn{\'u}sson, Sindri},
-  booktitle={Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
-  pages={2412--2414},
-  year={2023}
+author = {Beikmohammadi, Ali and Magn\'{u}sson, Sindri},
+title = {TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning},
+year = {2023},
+isbn = {9781450394321},
+publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+booktitle = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
+pages = {2412–2414},
+numpages = {3},
+location = {London, United Kingdom},
+series = {AAMAS '23}
 }
 ```
