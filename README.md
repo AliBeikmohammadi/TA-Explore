@@ -251,7 +251,7 @@ python A_Coupled_Four_Tank_MIMO_System.py --e 30000 --b 0 --E 3000 --w 1 --d Fal
 * [TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning.](https://dl.acm.org/doi/10.5555/3545946.3598951) In Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), London, United Kingdom, May 29 – June 2, 2023.
 <!-- * Human-Inspired Framework to Accelerate Reinforcement Learning. Submitted to the . -->
   
-Please cite the accompanied paper, if you find this useful:
+Please cite the accompanied papers, if you find this useful:
 ```
 @inproceedings{beikmohammadi2023ta,
 author = {Beikmohammadi, Ali and Magn\'{u}sson, Sindri},
