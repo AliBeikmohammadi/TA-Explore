@@ -254,16 +254,16 @@ python A_Coupled_Four_Tank_MIMO_System.py --e 30000 --b 0 --E 3000 --w 1 --d Fal
 Please cite the accompanied papers, if you find this useful:
 ```
 @inproceedings{beikmohammadi2023ta,
-author = {Beikmohammadi, Ali and Magn\'{u}sson, Sindri},
-title = {TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning},
-year = {2023},
-isbn = {9781450394321},
-publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
-booktitle = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
-pages = {2412–2414},
-numpages = {3},
-location = {London, United Kingdom},
-series = {AAMAS '23}
+  author = {Beikmohammadi, Ali and Magn\'{u}sson, Sindri},
+  title = {TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning},
+  year = {2023},
+  isbn = {9781450394321},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  booktitle = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
+  pages = {2412–2414},
+  numpages = {3},
+  location = {London, United Kingdom},
+  series = {AAMAS '23}
 }
 @article{beikmohammadi2025human,
   author={Beikmohammadi, Ali and Magn{\'u}sson, Sindri},
