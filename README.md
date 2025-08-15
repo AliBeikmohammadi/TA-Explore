@@ -1,8 +1,7 @@
 # TA-Explore
 Implementation of **TA-Explore**, as presented in:
 * [TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning.](https://dl.acm.org/doi/10.5555/3545946.3598951) In Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), London, United Kingdom, May 29 – June 2, 2023.
-* Human-Inspired Framework to Accelerate Reinforcement Learning. Submitted to The Journal of Supercomputing Journal.
-<!-- * Human-Inspired Framework to Accelerate Reinforcement Learning. Submitted to the . -->
+* [Human-Inspired Framework to Accelerate Reinforcement Learning.](https://link.springer.com/article/10.1007/s11227-025-07737-2) Published in The Journal of Supercomputing, 2025.
 
 
 
@@ -250,8 +249,7 @@ python A_Coupled_Four_Tank_MIMO_System.py --e 30000 --b 0 --E 3000 --w 1 --d Fal
 
 # Citation
 * [TA-Explore: Teacher-Assisted Exploration for Facilitating Fast Reinforcement Learning.](https://dl.acm.org/doi/10.5555/3545946.3598951) In Proc. of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), London, United Kingdom, May 29 – June 2, 2023.
-* Human-Inspired Framework to Accelerate Reinforcement Learning. Submitted to The Journal of Supercomputing Journal.
-<!-- * Human-Inspired Framework to Accelerate Reinforcement Learning. Submitted to the . -->
+* [Human-Inspired Framework to Accelerate Reinforcement Learning.](https://link.springer.com/article/10.1007/s11227-025-07737-2) Published in The Journal of Supercomputing, 2025.
   
 Please cite the accompanied papers, if you find this useful:
 ```
@@ -267,10 +265,15 @@ numpages = {3},
 location = {London, United Kingdom},
 series = {AAMAS '23}
 }
-@article{beikmohammadi2023human,
+@article{beikmohammadi2025human,
   author={Beikmohammadi, Ali and Magn{\'u}sson, Sindri},
   title={Human-Inspired Framework to Accelerate Reinforcement Learning},
-  year={2023}
-  journal={arXiv preprint arXiv:2303.08115},  
+  year={2025}
+  journal={The Journal of Supercomputing},
+  volume = {81},
+  issn = {1573-0484},
+  doi = {https://doi.org/10.1007/s11227-025-07737-2},
+  url = {https://link.springer.com/article/10.1007/s11227-025-07737-2},
 }
+
 ```
